@@ -1,0 +1,20 @@
+package:
+    name: voro
+    version: "0.4.6"
+
+source:
+    url: http://math.lbl.gov/voro++/download/dir/voro++-0.4.6.tar.gz
+
+build:
+    number: 0
+    script: make -e; make -e install
+
+requirements:
+  build:
+    - gcc
+
+about:
+  home: http://math.lbl.gov/voro++/about.html
+  license_family: BSD
+  license_file: LICENSE
+
