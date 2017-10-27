@@ -7,7 +7,7 @@ source:
 
 build:
     number: 0
-    script: make -e; make -e install
+    script: export CFLAGS="-Wall -ansi -pedantic -O3 -static -fPIC"; make -e; make -e install
 
 requirements:
   build:
